@@ -8,15 +8,16 @@ FROM phusion/baseimage:0.11
 CMD ["/sbin/my_init"]
 
 # ...put your own build instructions here...
-WORKDIR .ptty
-COPY gotty gotty
-COPY .gotty .gotty
+WORKDIR /.pterm/
 
+COPY . .
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 8080
 
+RUN chmod +x start.sh
+
 ## run gotty tmux session in background
-ENTRYPOINT ./gotty --config ./.gotty /bin/bash
+ENTRYPOINT ./start.sh
