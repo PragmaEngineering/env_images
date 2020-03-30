@@ -1,0 +1,11 @@
+enable_tls = false
+title_format = "🤘 Pragma - {{ .Command }} ({{ .Hostname }})"
+permit_write = true
+random-url = false
+timeout = 0
+max_connection = 10
+enable_reconnect = false
+permit_arguments = false
+enable_basic_auth = false
+port = "8080"
+address = "0.0.0.0"
