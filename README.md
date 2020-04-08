@@ -1,1 +1,2 @@
-docker images for pragma build plans
+
+gotty image start: `cd ./ubuntu_gotty && ./start.sh`
