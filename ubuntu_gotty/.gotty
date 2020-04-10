@@ -9,3 +9,5 @@ permit_arguments = false
 enable_basic_auth = false
 port = "8080"
 address = "0.0.0.0"
+ws-origin = ".*"
+Penis=5
