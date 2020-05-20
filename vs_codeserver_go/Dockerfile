@@ -76,4 +76,4 @@ WORKDIR /home/pragma/project
 
 EXPOSE 8080
 
-CMD ["code-server", "--disable-telemetry", "--bind-addr=0.0.0.0:8080"]
+CMD ["code-server", "--disable-telemetry", "--bind-addr=0.0.0.0:8080", "--auth=none"]
